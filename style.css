@@ -1,0 +1,145 @@
+#card{
+    height: 250px;
+}
+.service{
+    background-color: black;
+    padding: 40px;
+}
+#service{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80');
+    background-position: center;
+    object-fit: center;
+    background-size: cover;
+    position: relative;
+}
+#contact{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background-image: url('https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80'); */
+    background-position: center;
+    object-fit: center;
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.7;
+    top:0;
+    left: 0;
+    z-index: 0;
+}
+.s-container{
+    width: 86%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.s-card{
+    width:20%;
+    min-width: 300px;
+    padding:20px;
+    text-align: start;
+    border-radius: 12px;
+    background-color: whitesmoke;
+    position: relative;
+    margin-bottom: 20px;
+}
+.s-card:nth-child(2){
+    background-image: url('https://images.unsplash.com/photo-1569012871812-f38ee64cd54c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+}
+.s-card:nth-child(3){
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH_xWTptUuaaPY4MqId-9me42gXMFp_WwD9w&usqp=CAU');
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+}
+.s-card:nth-child(4){
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb75Oo1bn9hqngFjBHFvpfiwATL4_zw3jVYQ&usqp=CAU');
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+}
+
+.text{
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+.text h3{
+    color: white!important;
+}
+.s-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    border-radius: 12px;
+    opacity: 0.5;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.s-btn{
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 2px solid blue;
+    text-decoration: none;
+    color: black;
+    margin: 20px 0;
+}
+.s-card h3{
+    margin-bottom: 10px;
+    color:blue;
+}
+.s-card p{
+    margin-bottom: 20px;
+}
+#comment{
+    height: auto;
+}
+.service-card{
+    background-image: url('<img src="https://media.istockphoto.com/id/1212597557/photo/woman-using-laptop-while-sitting-at-home.jpg?s=170667a&w=0&k=20&c=i-NxH-bEKhEB8V8i8biRi4niL8Q_WH29eVXlM7dpn3k=" class="card-img" alt="">');
+    background-position: center;
+
+}
+.hero.anim{
+    animation-delay: 0.5s;
+}
+#hidden{
+    opacity: 0;
+}
+
+.anim{
+    animation: moveup 1s linear forwards;
+    opacity:0;
+    transform: translateY(30px);
+}
+@keyframes moveup {
+    100%{
+        opacity:1;
+    transform: translateY(0);
+    }
+}
+
+
+
+@media (min-width:760px){
+    .news-input{
+        width: 50%;
+    }
+}
