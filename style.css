@@ -142,4 +142,72 @@
     .news-input{
         width: 50%;
     }
+   
+}
+
+/* -----------------SVG------------- */
+.svg svg{
+    width: 100%;
+}
+#head{
+    animation: nod 2s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes nod{
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(-10deg);
+    }
+}
+
+#right-hand{
+    animation: press 1s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#left-hand{
+    animation: key 1s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#screen, #background{
+    animation: screen-color 2s infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#flower{
+    animation: move 2s infinite alternate-reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes screen-color{
+    from{
+        opacity: .5;
+    }to{
+        opacity: .9;
+        
+    }
+}
+@keyframes press{
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(49deg);
+    }
+}
+@keyframes key{
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(-5deg);
+    }
+}
+@keyframes move{
+    from{
+        transform: scale(0);
+    }to{
+        transform: scale(1);
+    }
 }
