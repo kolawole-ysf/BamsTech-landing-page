@@ -164,7 +164,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md mb-3">
-                    <div class="card bg-primary text-center text-light" id="hidden">
+                    <div class="card bg-primary text-center text-light " id="hidden">
                         <div class="card-body">
                             <div class="h1 mb-3">
                                 <i class="bi bi-laptop"></i>
@@ -348,23 +348,13 @@
         <div class="container">
             <h2 class="text-center mb-5 text-primary">Get In Touch With Us</h2>
             <div class="row">
-                <div class="col-sm-6 mb-5">
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" >
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary input-group" type="button">Submit</button>
-                      </div>
-                </div>
+              <div class="col-sm-6 mb-5">
+                <p class="h4 mb-5">Main Location: <span class="lead">Awolowo way, Ikeja Lagos</span></p>
+                <p class="h4 mb-5">Phone: <span class="lead">08065252608, +2348167767889</span></p>
+                <p class="h4 mb-5">Email: <span class="lead">BamsTechwebsolution@gmail.com</span></p>
+                <p class="h4 mb-5">Main Location: <span class="lead">Awolowo way, Ikeja Lagos</span></p>
+                <p class="h4 mb-5">Country: <span class="lead">Nigeria</span></p>
+              </div>
                 <div class="col-sm-6" id="hidden">
                     <img class="img-fluid rounded" src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="">
                 </div>
@@ -384,29 +374,33 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
+              <h5 class="modal-title">Contact Us</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <p class="lead text-center h2 mb-3">Fill in this form to get in touch with us.</p>
+              <p class="text-center h4 mb-3">Fill in this form to get in touch with us.</p>
+              <p class="lead alert-msg text-success text-center"></p>
               <form>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="name" >
+                    <p class=" lead alert-msg h5 text-danger d-none text-start">Oop! Invalid name input</p>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput2" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <p class="lead alert-msg text-danger d-none text-start">Oops! A valid email is required</p>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <p class="lead alert-msg text-danger d-none text-start">Oops! Your message should be atleast 2 characters long</p>
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-primary" id="submit">Submit</button>
             </div>
           </div>
         </div>
